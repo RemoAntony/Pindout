@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#F1F1F2" >
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginBottom="68dp"
+        android:fillViewport="true"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/topplacedlayout"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:background="@android:color/white" >
+
+                <ImageView
+                    android:id="@+id/orderplacedimg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="16dp"
+                    android:contentDescription="@null"
+                    android:src="@drawable/register_like" />
+
+                <TextView
+                    android:id="@+id/thanxmessage"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/orderplacedimg"
+                    android:layout_marginTop="16dp"
+                    android:gravity="center_horizontal"
+                    android:text="@string/thank_you"
+                    android:textSize="22sp" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/thanxmessage"
+                    android:layout_marginTop="20dp"
+                    android:gravity="center_horizontal"
+                    android:paddingBottom="16dp"
+                    android:text="@string/regicter_activation_msg"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" >
+
+        <Button
+            android:id="@+id/shopnow"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#0066FF"
+            android:onClick="RegisterSuccessOk"
+            android:text="@string/Ok"
+            android:textColor="@android:color/white"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+</RelativeLayout><!-- From: file:/C:/Users/REMO/AndroidStudioProjects/Pindout/res/layout/register_success_screen.xml -->

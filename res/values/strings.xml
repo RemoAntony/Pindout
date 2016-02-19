@@ -1,0 +1,209 @@
+<resources>
+    <string name="title_activity_profile">Profile</string>
+    <string name="spinner_title">Select Category</string>
+    <string name="proftitle_section1">Profile</string>
+    <string name="proftitle_section2">Review</string>
+    <string name="proftitle_section3">Network</string>
+    <string name="title_activity_category_all">Category All</string>
+    <string name="title_activity_category_online">Category Online</string>
+    <string name="title_activity_category_restaurant">Category Restaurant</string>
+    <string name="title_activity_category_grocery">Category Grocery</string>
+    <string name="title_activity_category_beauty">Category Beauty</string>
+    <string name="title_activity_search">Search</string>
+    <string name="title_activity_wallet">Wallet</string>
+    <string name="title_activity_deals">Deals</string>
+    <string-array name="nav_drawer_labels">
+        <item>@string/dashboard</item>
+        <item>@string/sign_out</item>
+
+    </string-array>
+
+    <string name="dashboard">Dashboard</string>
+    <string name="sign_out">Sign Out</string>
+
+
+
+    <string name="label_deal_activity">Deal Description</string>
+
+    <style name="DefaultButtonText">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">#979797</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_margin">3dp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:shadowColor">#f9f9f9</item>
+        <item name="android:shadowDx">1</item>
+        <item name="android:shadowDy">1</item>
+        <item name="android:shadowRadius">1</item>
+    </style>
+    <string name="title_activity_sign_up">SignUp</string>
+    <string name="title_activity_display_deal_url">DisplayDealUrl</string>
+    <string name="title_activity_rem_ind_user_main">RemIndUserMain</string>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <string name="app_name">My Shops</string>
+    <string name="splash_label">Pindout.com</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_search">Search</string>
+    <string name="action_info">Info</string>
+    <string name="drawer_open">Open</string>
+    <string name="drawer_close">Close</string>
+
+    <!-- navigation drawer item labels -->
+    <string name="add_deal">Add Deal</string>
+    <string name="manage_deal">Manage Deal</string>
+    <string name="post_message">Post message</string>
+    <string name="manage_business">Manage Business</string>
+    <string name="additional_info">Additional Business Info</string>
+    <string name="reviews">Reviews</string>
+
+    <!-- login screen labels -->
+    <string name="hint_first_name">First Name</string>
+    <string name="hint_last_name">Last Name</string>
+    <string name="hint_email">Email</string>
+    <string name="hint_password">Password</string>
+    <string name="hint_confirm_pass">Confirm Password</string>
+    <string name="hint_businessname">Business Name</string>
+    <string name="hint_businessphone">Business Phone</string>
+    <string name="hint_address">Address</string>
+    <string name="hint_search_category">Search category&#8230;</string>
+    <string name="hint_search_key">Business Search Keywords&#8230;</string>
+    <string name="hint_username">Username</string>
+    <string name="btn_next">Next</string>
+    <string name="agree_terms">I agree with terms n conditions</string>
+    <string name="btn_register">Register</string>
+    <string name="btn_login">Login</string>
+    <string name="hint_btn_select_city">Select City</string>
+    <string name="hint_btn_select_area">Select Area</string>
+    <string name="hint_btn_add_category">Add Category</string>
+    <string name="hint_btn_add_facility">Add Facility</string>
+    <string name="hint_deal_title">Deal Title</string>
+    <string name="hint_select_image">Choose Image</string>
+    <string name="hint_select_deal_category">Deal Category</string>
+    <string name="hint_deal_url">Deal Url</string>
+    <string name="hint_deal_main_price">Main Price</string>
+    <string name="hint_deal_deal_price">Deal Price</string>
+    <string name="hint_deal_end_date">Select End Date</string>
+    <string name="hint_deal_desc">Deal Description</string>
+    <string name="hint_business_logo">Business Logo</string>
+    <string name="already_reg">Already registered? Login me!</string>
+    <string name="hint_greeting_msg">Greeting message&#8230;</string>
+    <string name="hint_owner_ph">Owner Phone</string>
+    <string name="hint_pincode">Pincode</string>
+    <string name="hint_business_url">Business URL</string>
+    <string name="hint_working_hour">Working Hours</string>
+    <string name="hint_about_business">About Business</string>
+    <string name="hint_greeting_text">Greeting Text</string>
+    <string name="hint_product_n_services">Product and Services</string>
+    <string name="hint_additional_info">Additional Info</string>
+    <string name="hint_username_n_email">Email/Username</string>
+	<string name="hint_image_tab_name">Image Tab Name</string>
+    <string name="hint_image_first">First Image</string>
+    <string name="hint_image_second">Second Image</string>
+    <string name="hint_image_third">Third Image</string>
+    <string name="hint_image_fourth">Fourth Image</string>
+    <string name="hint_image_fifth">Fifth Image</string>
+    <string name="not_registered">Not registered? Signup now!</string>
+    <string name="users_no_comments">No comments</string>
+    <!-- error msgs -->
+
+    <string name="hint_email_mobile">Email/Mobile</string>
+    <string name="err_msg_enter_email_mobile">Enter Email/Mobile</string>
+
+
+
+    <string name="err_msg_name">Enter your first name</string>
+    <string name="err_msg_lastname">Enter your last name</string>
+    <string name="err_msg_email">Enter Email</string>
+    <string name="err_msg_invalid_emailormobileno">Invalid Mobile No or Email Id</string>
+    <string name="err_msg_enterpass">Enter Password</string>
+    <string name="err_msg_enterconfirmpass">Confirm Password</string>
+    <string name="err_msg_passdonotmatch">Password mismatch!</string>
+    <string name="err_msg_pass_eight_char">Password must be at least 8 characters</string>
+    <string name="err_msg_businessname">Enter Business Name</string>
+    <string name="err_msg_businessphone">Enter Business Phone</string>
+    <string name="err_msg_invalid_mobileno">Invalid Mobile No</string>
+    <string name="err_msg_address">Enter Address</string>
+    <string name="err_msg_search_key">Enter search keyword</string>
+    <string name="err_msg_username">Enter username</string>
+    <string name="err_msg_invalidemail">Invalid Email </string>
+    <string name="err_msg_dealtitle">Enter Deal Title</string>
+    <string name="err_msg_deal_url">Enter Deal Url</string>
+    <string name="err_msg_deal_mainprice">Enter Deal Main Price</string>
+    <string name="err_msg_deal_price">Enter Deal Price</string>
+    <string name="err_msg_greetingmsg">Enetr message</string>
+    <string name="err_msg_deal_desc">Enter Deal Description</string>
+
+    <!-- activity names -->
+    <string name="registration_screen_first">Registration Screen</string>
+
+    <!-- TextViews -->
+    <string name="user_cat_list">Your category list&#8230;</string>
+    <string name="add_info">Add Info</string>
+    <string name="user_info_top">(Add logo,Pincode,business URL&#8230;)</string>
+    <string name="user_info_middle">(About Business,Product and Services&#8230;)</string>
+    <string name="user_info_bottom">(Change password)</string>
+    <string name="user_info_bottom_most">(Add images Tab with images)</string>
+    <string name="forgot_pass">Forgot password ?</string>
+
+
+    <!-- Button strings -->
+    <string name="submit">Submit</string>
+    <string name="cancel">Cancel</string>
+    <string name="update">Update</string>
+    <string name="delete">Delete</string>
+    <string name="Ok">OK</string>
+    <string name="save">Save</string>
+
+    <!-- Messages to user -->
+    <string name="no_record">No record found</string>
+    <string name="no_deal_found">No Deal Found</string>
+    <string name="thank_you">Thank You</string>
+    <string name="regicter_activation_msg">Your business would be activated within next 8 business hours. You will get an e-mail confirmation when activated.</string>
+
+    <!-- Activity Labels -->
+    <string name="label_login">Login</string>
+    <string name="label_registration">Registration</string>
+    <string name="label_messages">Messages</string>
+    <string name="add_new_msg">Add Message</string>
+    <string name="label_add_deal">Add Deal</string>
+    <string name="label_manage_deal">Manage Deal</string>
+    <string name="label_edit_deal">Edit Deal</string>
+    <string name="label_edit_business">Edit Business</string>
+    <string name="label_edit_business_cat">Business Categories</string>
+    <string name="label_add_info">Add Info</string>
+    <string name="label_add_tag_images">Add Image Tag</string>
+
+    <!-- Other Symbols -->
+    <string name="rupee_symbol">₹</string>
+    <string name="title_activity_one_time_show">OneTimeShow</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_more_deals_sub1">MoreDealsSub1</string>
+    <string name="title_activity_categorylisting">categorylisting</string>
+    <string name="title_activity_tagged_businesses">TaggedBusinesses</string>
+    <string name="title_activity_more_deals_sub2">MoreDealsSub2</string>
+    <string name="title_activity_more_deals_sub3">MoreDealsSub3</string>
+    <string name="title_activity_business_home_page">BusinessHomePage</string>
+    <string name="title_activity_category_instore">categoryInstore</string>
+    <string name="title_activity_deal_page">DealPage</string>
+
+</resources>

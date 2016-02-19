@@ -1,0 +1,19 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.antony.remo.rempindout.RemIndUserMain">
+    <item android:id="@+id/wallet"
+        android:title="wallet"
+        android:icon="@drawable/wallet"
+        app:showAsAction="ifRoom"/>
+    <item android:id="@+id/search"
+        android:title="search"
+        android:icon="@drawable/search"
+        app:showAsAction="ifRoom"/>
+    <item
+        android:id="@+id/action_refresh"
+        app:showAsAction="ifRoom"
+        android:title="Refresh"
+        android:icon="@drawable/ic_refresh_white_48dp"></item>
+</menu>
+<!-- From: file:/C:/Users/REMO/AndroidStudioProjects/Pindout/res/menu/menu_rem_ind_user_main.xml -->

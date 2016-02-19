@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_margin="5dp"
+    android:background="#cccccc"
+    android:layout_height="match_parent"
+    >
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/business_review">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/ar"
+            android:background="@drawable/writereview"
+            android:layout_marginStart="250dp"/>
+<!--    <TextView
+        android:id="@+id/user"
+        android:text="User Name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ar"
+        android:textColor="#323173"
+        android:layout_marginStart="30dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"/> -->
+    <TextView
+        android:id="@+id/reviewtxt"
+        android:text="Review Text"
+        android:layout_width="wrap_content"
+        android:layout_below="@+id/ar"
+        android:layout_marginStart="20dp"
+        android:layout_toRightOf="@+id/user"
+        android:layout_height="wrap_content"
+        android:textColor="#323173"
+        android:textAppearance="?android:attr/textAppearanceLarge"/>
+
+    </RelativeLayout>
+</LinearLayout>
+</ScrollView><!-- From: file:/C:/Users/REMO/AndroidStudioProjects/Pindout/res/layout/business_review.xml -->

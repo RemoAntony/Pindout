@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/material_grey_100" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@drawable/rounde_layout_bg" >
+
+        <TextView
+            android:id="@+id/textgreetingmsg"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="6dp"
+            android:text=""
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/greetingmsgdate"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textgreetingmsg"
+            android:layout_marginLeft="8dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="4dp"
+            android:text=""
+            android:textColor="@color/material_grey_600"
+            android:textSize="14sp"
+            android:textStyle="normal" />
+    </RelativeLayout>
+
+</RelativeLayout><!-- From: file:/C:/Users/REMO/AndroidStudioProjects/Pindout/res/layout/greeting_msg_row.xml -->

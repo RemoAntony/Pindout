@@ -1,0 +1,116 @@
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/catinstoretool"
+        android:title="Category Instore"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark"
+        />
+    <LinearLayout
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+        <Button
+            android:onClick="m3rewind"
+            android:background="@drawable/rewind"
+            android:layout_width="50dp"
+            android:id="@+id/b1"
+            android:layout_height="wrap_content" />
+        <Button
+            android:layout_marginRight="10dp"
+            android:onClick="m3pre"
+            android:id="@+id/b2"
+            android:background="@drawable/backgreen"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:onClick="tv11n"
+            android:text=""
+            android:layout_margin="10dp"
+            android:textAppearance="?android:textAppearanceLarge"
+            android:id="@+id/mdpgination1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:onClick="tv22n"
+            android:layout_margin="10dp"
+            android:textAppearance="?android:textAppearanceLarge"
+            android:text=""
+            android:id="@+id/mdpgination2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:onClick="tv33n"
+            android:layout_margin="10dp"
+            android:textAppearance="?android:textAppearanceLarge"
+            android:text=""
+            android:id="@+id/mdpgination3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <Button
+            android:layout_marginLeft="10dp"
+            android:onClick="m3more"
+            android:id="@+id/b3"
+            android:background="@drawable/playgreen"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content" />
+        <Button
+            android:onClick="m3ff"
+            android:id="@+id/b4"
+            android:background="@drawable/fastforward"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/insScroll"
+    android:background="#cccccc"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+    <RelativeLayout
+        android:id="@+id/scrollrelcheck1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:id="@+id/instoremain"
+        tools:context="com.app.pindout.categoryInstore"
+        >
+
+
+
+    </LinearLayout>
+    <Button
+
+        android:background="@drawable/btn_red"
+        android:textColor="#ffffff"
+        android:onClick="predealssearch"
+        android:layout_below="@+id/instoremain"
+        android:id="@+id/prev"
+        android:text="Previous Results"
+        android:layout_width="0dp"
+        android:layout_height="0dp" />
+    <Button
+        android:textColor="#ffffff"
+        android:background="@drawable/btn_green"
+        android:onClick="nextdealssearch"
+        android:layout_below="@+id/instoremain"
+        android:id="@+id/next"
+        android:text="Load More"
+        android:layout_alignParentRight="true"
+        android:layout_width="0dp"
+        android:layout_height="0dp" />
+</RelativeLayout>
+</ScrollView>
+    </LinearLayout>

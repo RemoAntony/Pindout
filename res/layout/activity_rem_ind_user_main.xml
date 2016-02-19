@@ -1,0 +1,474 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+
+<android.support.v4.widget.DrawerLayout
+
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <!-- The main content view -->
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".DashBoard">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbarmain"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:background="@color/ColorPrimary11"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark"
+            >
+<ImageView
+    android:src="@drawable/ic_launcher"
+    android:layout_width="50dp"
+    android:layout_height="match_parent" />
+            <Spinner
+                android:id="@+id/spinner_city111"
+                android:layout_width="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:background="@color/colorPrimaryDark"
+                android:popupBackground="@color/colorPrimaryDark"
+                android:layout_height="wrap_content" />
+        </android.support.v7.widget.Toolbar>
+
+
+        <HorizontalScrollView
+            android:background="@color/ColorPrimary11"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <Button
+                    android:textColor="@color/ColorPrimary11"
+                    android:id="@+id/topcategory"
+                    android:background="@drawable/btn_gray"
+                    android:onClick="topcategory"
+                    android:text="Categories"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp" />
+                <Button
+                    android:textColor="@color/ColorPrimary11"
+                    android:onClick="toponline"
+                    android:id="@+id/toponline"
+                    android:background="@drawable/btn_gray"
+                    android:layout_weight="1"
+                    android:text="Online"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content" />
+                <Button
+                    android:textColor="@color/ColorPrimary11"
+                    android:onClick="toprestaurant"
+                    android:id="@+id/toprestaurant"
+                    android:background="@drawable/btn_gray"
+                    android:layout_weight="1"
+                    android:text="Books"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content" />
+                <Button
+                    android:textColor="@color/ColorPrimary11"
+                    android:onClick="topinstore"
+                    android:id="@+id/topinstore"
+                    android:background="@drawable/btn_gray"
+                    android:layout_weight="1"
+                    android:text="In-Store"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content" />
+                <Button
+                    android:textColor="@color/ColorPrimary11"
+                    android:onClick="topgrocery"
+                    android:id="@+id/topgrocery"
+                    android:background="@drawable/btn_gray"
+                    android:layout_weight="1"
+                    android:text="Grocery"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content" />
+                <Button
+                    android:textColor="@color/ColorPrimary11"
+                    android:onClick="topbeauty"
+                    android:id="@+id/topbeauty"
+                    android:background="@drawable/btn_gray"
+                    android:layout_weight="1"
+                    android:text="Beauty"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </HorizontalScrollView>
+
+
+        <com.app.pindout.SlidingTabLayout
+            android:id="@+id/tabsmain"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:elevation="2dp"
+            android:background="@color/ColorPrimaryDark"/>
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/pagermain"
+
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            />
+
+
+
+    </LinearLayout>
+    <!-- The navigation drawer list-->
+    <ScrollView
+        android:id="@+id/drawer_list"
+        android:layout_width="150dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:background="#8c489f"
+
+        android:choiceMode="singleChoice"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="0dp" >
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="150dp"
+            android:layout_height="match_parent">
+            <View
+                android:background="#c3c3e5"
+                android:layout_width="150dp"
+                android:layout_height="5dp"/>
+            <ImageView
+                android:scaleType="fitXY"
+                android:src="@drawable/pindoutlogo"
+                android:layout_width="150dp"
+                android:layout_height="200dp" />
+            <!--
+            <View
+                android:background="#c3c3e5"
+                android:layout_width="match_parent"
+                android:layout_height="5dp"/>
+            <Button
+                android:id="@+id/yourtaggedbus"
+                android:background="#8c489f"
+                android:onClick="taggedbus"
+                android:text="Tagged Businesses"
+                android:layout_gravity="center"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:textColor="#ffffff"
+                android:layout_width="match_parent"
+                android:layout_height="80dp" />
+                -->
+            <View
+                android:background="#c3c3e5"
+                android:layout_width="150dp"
+                android:layout_height="2dp"/>
+            <Button
+                android:background="#8c489f"
+                android:id="@+id/dash"
+                android:onClick="dashboard"
+                android:text="Profile"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:textColor="#ffffff"
+                android:layout_gravity="center"
+                android:layout_width="150dp"
+                android:layout_height="80dp" />
+            <View
+                android:background="#c3c3e5"
+                android:layout_width="150dp"
+                android:layout_height="2dp"/>
+            <Button
+                android:background="#8c489f"
+                android:text="All Categories"
+                android:onClick="moredeals"
+                android:id="@+id/moredealsbut"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:textColor="#ffffff"
+                android:layout_gravity="center"
+                android:layout_width="150dp"
+                android:layout_height="80dp" />
+            <View
+                android:background="#c3c3e5"
+                android:layout_width="150dp"
+                android:layout_height="2dp"/>
+        <ScrollView
+            android:id="@+id/dealscroll"
+            android:layout_width="match_parent"
+            android:layout_height="180dp">
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="180dp">
+            <Button
+                android:background="#da70d6"
+                android:id="@+id/babyandkids"
+                android:onClick="baby"
+                android:text="Baby and Kids"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:layout_gravity="center"
+                android:textColor="#ffffff"
+                android:layout_width="match_parent"
+                android:layout_height="80dp" />
+            <View
+                android:background="#c3c3e5"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"/>
+            <Button
+                android:background="#da70d6"
+                android:id="@+id/bags"
+                android:onClick="bag"
+                android:layout_gravity="center"
+                android:text="Bags and Luggages"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:textColor="#ffffff"
+                android:layout_width="match_parent"
+                android:layout_height="80dp" />
+            <View
+                android:background="#c3c3e5"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"/>
+            <Button
+                android:background="#da70d6"
+                android:id="@+id/books"
+                android:onClick="book"
+                android:layout_gravity="center"
+                android:text="Books and Media"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:textColor="#ffffff"
+                android:layout_width="match_parent"
+                android:layout_height="80dp" />
+            <View
+                android:background="#c3c3e5"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"/>
+            <Button
+                android:background="#da70d6"
+                android:id="@+id/computers"
+                android:onClick="computer"
+                android:layout_gravity="center"
+                android:text="Computers"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:textColor="#ffffff"
+                android:layout_width="match_parent"
+                android:layout_height="80dp" />
+                <View
+                    android:background="#c3c3e5"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"/>
+                <Button
+                    android:background="#da70d6"
+                    android:id="@+id/electronics"
+                    android:onClick="electronics"
+                    android:layout_gravity="center"
+                    android:text="Electronics"
+                    android:textAppearance="?android:textAppearanceMedium"
+                    android:textColor="#ffffff"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp" />
+                <View
+                    android:background="#c3c3e5"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"/>
+
+                <Button
+                    android:background="#da70d6"
+                    android:id="@+id/homeandkitchen"
+                    android:layout_gravity="center"
+                    android:onClick="homkitch"
+                    android:text="Home and Kitchen"
+                    android:textAppearance="?android:textAppearanceMedium"
+                    android:textColor="#ffffff"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp" />
+                <View
+                    android:background="#c3c3e5"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"/>
+                <Button
+                    android:background="#da70d6"
+                    android:id="@+id/men"
+                    android:onClick="men"
+                    android:layout_gravity="center"
+                    android:text="Men"
+                    android:textAppearance="?android:textAppearanceMedium"
+                    android:textColor="#ffffff"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp" />
+                <View
+                    android:background="#c3c3e5"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"/>
+                <Button
+                    android:background="#da70d6"
+                    android:id="@+id/mobiles"
+                    android:onClick="mobile"
+                    android:layout_gravity="center"
+                    android:text="Mobiles and Tabs"
+                    android:textAppearance="?android:textAppearanceMedium"
+                    android:textColor="#ffffff"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp" />
+                <View
+                    android:background="#c3c3e5"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"/>
+                <Button
+                    android:background="#da70d6"
+                    android:id="@+id/fashion"
+                    android:onClick="fashion"
+                    android:layout_gravity="center"
+                    android:text="Personal and Fashion"
+                    android:textAppearance="?android:textAppearanceMedium"
+                    android:textColor="#ffffff"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp" />
+                <View
+                    android:background="#c3c3e5"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"/>
+                <Button
+                    android:background="#da70d6"
+                    android:id="@+id/sports"
+                    android:onClick="sport"
+                    android:layout_gravity="center"
+                    android:text="Sports"
+                    android:textAppearance="?android:textAppearanceMedium"
+                    android:textColor="#ffffff"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp" />
+                <View
+                    android:background="#c3c3e5"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"/>
+                <Button
+                    android:background="#da70d6"
+                    android:id="@+id/women"
+                    android:onClick="women"
+                    android:layout_gravity="center"
+                    android:text="Women"
+                    android:textAppearance="?android:textAppearanceMedium"
+                    android:textColor="#ffffff"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp" />
+
+            </LinearLayout>
+        </ScrollView>
+
+            <Button
+                android:background="#8c489f"
+                android:text="Categories"
+                android:id="@+id/catbut"
+                android:onClick="catbut"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:textColor="#ffffff"
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="80dp" />
+
+            <ScrollView
+                android:id="@+id/categoryscroll"
+                android:layout_width="match_parent"
+                android:layout_height="180dp">
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="180dp">
+                    <Button
+                        android:background="#da70d6"
+                        android:id="@+id/allbutton"
+                        android:onClick="allcat"
+                        android:text="All "
+                        android:textAppearance="?android:textAppearanceMedium"
+                        android:layout_gravity="center"
+                        android:textColor="#ffffff"
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp" />
+                    <View
+                        android:background="#c3c3e5"
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"/>
+                    <Button
+                        android:background="#da70d6"
+                        android:id="@+id/onlinebutton"
+                        android:onClick="onlinecat"
+                        android:layout_gravity="center"
+                        android:text="Online"
+                        android:textAppearance="?android:textAppearanceMedium"
+                        android:textColor="#ffffff"
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp" />
+                    <View
+                        android:background="#c3c3e5"
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"/>
+                    <Button
+                        android:background="#da70d6"
+                        android:id="@+id/restaurantbutton"
+                        android:onClick="restaurantcat"
+                        android:layout_gravity="center"
+                        android:text="Restaurants"
+                        android:textAppearance="?android:textAppearanceMedium"
+                        android:textColor="#ffffff"
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp" />
+                    <View
+                        android:background="#c3c3e5"
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"/>
+                    <Button
+                        android:background="#da70d6"
+                        android:id="@+id/grocerybutton"
+                        android:onClick="grocerycat"
+                        android:layout_gravity="center"
+                        android:text="Groceries"
+                        android:textAppearance="?android:textAppearanceMedium"
+                        android:textColor="#ffffff"
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp" />
+                    <View
+                        android:background="#c3c3e5"
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"/>
+                    <Button
+                        android:background="#da70d6"
+                        android:id="@+id/beautybutton"
+                        android:onClick="beautycat"
+                        android:layout_gravity="center"
+                        android:text="Beauty"
+                        android:textAppearance="?android:textAppearanceMedium"
+                        android:textColor="#ffffff"
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp" />
+                    <View
+                        android:background="#c3c3e5"
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"/>
+                </LinearLayout>
+            </ScrollView>
+            <View
+                android:background="#c3c3e5"
+                android:layout_width="match_parent"
+                android:layout_marginBottom="2dp"
+                android:layout_height="2dp"/>
+            <Button
+                android:background="#8c489f"
+                android:id="@+id/logoutt"
+                android:onClick="signout"
+                android:layout_gravity="center"
+                android:text="Log Out"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:textColor="#ffffff"
+                android:layout_width="match_parent"
+                android:layout_height="80dp" />
+            <View
+                android:background="#c3c3e5"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"/>
+        </LinearLayout>
+    </ScrollView>
+</android.support.v4.widget.DrawerLayout>
+    </LinearLayout>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@drawable/customborder"
+    android:layout_margin="15dp"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+    <View
+        android:layout_alignParentTop="true"
+        android:background="#c3c3e5"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"/>
+    <TextView
+    android:textColor="@color/colorPrimaryDark"
+    android:textAppearance="?android:textAppearanceLarge"
+        android:id="@+id/businesssearchname"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" />
+    <TextView
+        android:textAppearance="?android:textAppearanceMedium"
+        android:id="@+id/businesssearchaddr"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/businesssearchphone"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/teslaburl"
+        android:layout_width="0dp"
+        android:layout_height="0dp" />
+    <Button
+        android:background="@drawable/btn_green"
+        android:textColor="#ffffff"
+        android:id="@+id/tagbutton"
+        android:text="Tag this Business"
+        android:layout_width="0dp"
+        android:layout_height="0dp" />
+    <Button
+        android:background="@drawable/btn_violetred"
+        android:textColor="#ffffff"
+        android:id="@+id/untagbutton"
+        android:text="Untag this Business"
+        android:layout_width="0dp"
+        android:layout_height="0dp" />
+    <View
+        android:layout_alignParentTop="true"
+        android:background="#c3c3e5"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"/>
+    <TextView
+        android:id="@+id/hiddenbid"
+        android:layout_width="0dp"
+        android:layout_height="0dp" />
+</LinearLayout>
+<!-- From: file:/C:/Users/REMO/AndroidStudioProjects/Pindout/res/layout/businesssearchresults.xml -->

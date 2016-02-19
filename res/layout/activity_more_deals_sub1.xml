@@ -1,0 +1,169 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="#8c489f"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.app.pindout.MoreDealsSub1">
+
+    <LinearLayout
+        android:layout_gravity="center_vertical"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="180dp">
+        <Button
+            android:background="#da70d6"
+            android:id="@+id/babyandkidssub1"
+            android:onClick="baby"
+            android:text="Baby and Kids"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:layout_gravity="center"
+            android:textColor="#ffffff"
+            android:layout_width="match_parent"
+            android:layout_height="80dp" />
+        <View
+            android:background="#c3c3e5"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"/>
+        <Button
+            android:background="#da70d6"
+            android:id="@+id/bagssub1"
+            android:onClick="bag"
+            android:layout_gravity="center"
+            android:text="Bags and Luggages"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:textColor="#ffffff"
+            android:layout_width="match_parent"
+            android:layout_height="80dp" />
+        <View
+            android:background="#c3c3e5"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"/>
+        <Button
+            android:background="#da70d6"
+            android:id="@+id/bookssub1"
+            android:onClick="book"
+            android:layout_gravity="center"
+            android:text="Books and Media"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:textColor="#ffffff"
+            android:layout_width="match_parent"
+            android:layout_height="80dp" />
+        <View
+            android:background="#c3c3e5"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"/>
+        <Button
+            android:background="#da70d6"
+            android:id="@+id/computerssub1"
+            android:onClick="computer"
+            android:layout_gravity="center"
+            android:text="Computers"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:textColor="#ffffff"
+            android:layout_width="match_parent"
+            android:layout_height="80dp" />
+        <View
+            android:background="#c3c3e5"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"/>
+        <Button
+            android:background="#da70d6"
+            android:id="@+id/electronicssub1"
+            android:onClick="electronics"
+            android:layout_gravity="center"
+            android:text="Electronics"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:textColor="#ffffff"
+            android:layout_width="match_parent"
+            android:layout_height="80dp" />
+        <View
+            android:background="#c3c3e5"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"/>
+
+        <Button
+            android:background="#da70d6"
+            android:id="@+id/homeandkitchensub1"
+            android:layout_gravity="center"
+            android:onClick="homkitch"
+            android:text="Home and Kitchen"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:textColor="#ffffff"
+            android:layout_width="match_parent"
+            android:layout_height="80dp" />
+        <View
+            android:background="#c3c3e5"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"/>
+        <Button
+            android:background="#da70d6"
+            android:id="@+id/mensub1"
+            android:onClick="men"
+            android:layout_gravity="center"
+            android:text="Men"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:textColor="#ffffff"
+            android:layout_width="match_parent"
+            android:layout_height="80dp" />
+        <View
+            android:background="#c3c3e5"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"/>
+        <Button
+            android:background="#da70d6"
+            android:id="@+id/mobilessub1"
+            android:onClick="mobile"
+            android:layout_gravity="center"
+            android:text="Mobiles and Tabs"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:textColor="#ffffff"
+            android:layout_width="match_parent"
+            android:layout_height="80dp" />
+        <View
+            android:background="#c3c3e5"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"/>
+        <Button
+            android:background="#da70d6"
+            android:id="@+id/fashionsub1"
+            android:onClick="fashion"
+            android:layout_gravity="center"
+            android:text="Personal and Fashion"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:textColor="#ffffff"
+            android:layout_width="match_parent"
+            android:layout_height="80dp" />
+        <View
+            android:background="#c3c3e5"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"/>
+        <Button
+            android:background="#da70d6"
+            android:id="@+id/sportssub1"
+            android:onClick="sport"
+            android:layout_gravity="center"
+            android:text="Sports"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:textColor="#ffffff"
+            android:layout_width="match_parent"
+            android:layout_height="80dp" />
+        <View
+            android:background="#c3c3e5"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"/>
+        <Button
+            android:background="#da70d6"
+            android:id="@+id/womensub1"
+            android:onClick="women"
+            android:layout_gravity="center"
+            android:text="Women"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:textColor="#ffffff"
+            android:layout_width="match_parent"
+            android:layout_height="80dp" />
+
+    </LinearLayout>
+</ScrollView>

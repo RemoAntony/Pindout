@@ -1,0 +1,202 @@
+-injars 'C:\Users\REMO\AndroidStudioProjects\Pindout\build\intermediates\multi-dex\release\allclasses.jar'
+-outjars 'C:\Users\REMO\AndroidStudioProjects\Pindout\build\intermediates\multi-dex\release\componentClasses.jar'
+
+-libraryjars 'C:\Users\REMO\AppData\Local\Android\sdk\build-tools\22.0.1\lib\shrinkedAndroid.jar'
+
+-forceprocessing
+-dontoptimize
+-dontobfuscate
+-dontpreverify
+-dontwarn
+-printconfiguration 'C:\Users\REMO\AndroidStudioProjects\Pindout\build\intermediates\multi-dex\release\components.flags'
+
+
+-keep class null {
+    <init>();
+    void attachBaseContext(android.content.Context);
+}
+
+-keep class com.app.pindout.SplashActivity {
+    <init>();
+}
+
+-keep class com.app.pindout.Check_LoginActivity {
+    <init>();
+}
+
+-keep class com.app.pindout.RegisterActivity {
+    <init>();
+}
+
+-keep class com.app.pindout.RegisterFacilityActivity {
+    <init>();
+}
+
+-keep class com.app.pindout.RegisterActivity_Category {
+    <init>();
+}
+
+-keep class com.app.pindout.ForgotPasswordActivity {
+    <init>();
+}
+
+-keep class com.app.pindout.RegisterActivity_Facility {
+    <init>();
+}
+
+-keep class com.app.pindout.progressbar.ShowProgressDialog {
+    <init>();
+}
+
+-keep class com.app.pindout.ViewCategoryList {
+    <init>();
+}
+
+-keep class com.app.pindout.ViewFacilityList {
+    <init>();
+}
+
+-keep class com.app.pindout.MainActivity {
+    <init>();
+}
+
+-keep class com.app.pindout.businessdeals.AddDealActivity {
+    <init>();
+}
+
+-keep class com.app.pindout.greetingmsg.GreetingMessageActivity {
+    <init>();
+}
+
+-keep class com.app.pindout.greetingmsg.AddNewMessageActivity {
+    <init>();
+}
+
+-keep class com.app.pindout.businessdeals.DisplayDealsActivity {
+    <init>();
+}
+
+-keep class com.app.pindout.businessdeals.EditDealActivity {
+    <init>();
+}
+
+-keep class com.app.pindout.EditBusinessActivity {
+    <init>();
+}
+
+-keep class com.app.pindout.EditBusinessCategoryActivity {
+    <init>();
+}
+
+-keep class com.app.pindout.Additional_Info_Activity {
+    <init>();
+}
+
+-keep class com.app.pindout.businessdeals.DealActivity {
+    <init>();
+}
+
+-keep class com.app.pindout.AddBusinessImageTagActivity {
+    <init>();
+}
+
+-keep class com.app.pindout.Terms {
+    <init>();
+}
+
+-keep class com.app.pindout.OneTimeShow {
+    <init>();
+}
+
+-keep class com.app.pindout.MainActivityRemo {
+    <init>();
+}
+
+-keep class com.app.pindout.RemIndUserMain {
+    <init>();
+}
+
+-keep class com.app.pindout.DashBoard {
+    <init>();
+}
+
+-keep class com.app.pindout.categoryAll {
+    <init>();
+}
+
+-keep class com.app.pindout.categoryOnline {
+    <init>();
+}
+
+-keep class com.app.pindout.categoryRestaurant {
+    <init>();
+}
+
+-keep class com.app.pindout.categoryGrocery {
+    <init>();
+}
+
+-keep class com.app.pindout.categoryBeauty {
+    <init>();
+}
+
+-keep class com.app.pindout.Search {
+    <init>();
+}
+
+-keep class com.app.pindout.Wallet {
+    <init>();
+}
+
+-keep class com.app.pindout.Deals {
+    <init>();
+}
+
+-keep class com.app.pindout.SignUp {
+    <init>();
+}
+
+-keep class com.app.pindout.DisplayDealUrl {
+    <init>();
+}
+
+-keep class com.app.pindout.MoreDealsSub1 {
+    <init>();
+}
+
+-keep class com.app.pindout.categorylisting {
+    <init>();
+}
+
+-keep class com.app.pindout.TaggedBusinesses {
+    <init>();
+}
+
+-keep class com.app.pindout.MoreDealsSub2 {
+    <init>();
+}
+
+-keep class com.app.pindout.MoreDealsSub3 {
+    <init>();
+}
+
+-keep class com.app.pindout.BusinessPage {
+    <init>();
+}
+
+-keep class com.app.pindout.categoryInstore {
+    <init>();
+}
+
+-keep class com.app.pindout.DealPage {
+    <init>();
+}
+
+-keep public class * extends android.app.backup.BackupAgent {
+    <init>();
+}
+
+-keep public class * extends java.lang.annotation.Annotation {
+    <fields>;
+    <methods>;
+}

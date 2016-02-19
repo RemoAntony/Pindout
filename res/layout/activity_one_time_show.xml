@@ -1,0 +1,54 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:background="#ADDFFF"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:id="@+id/gettingstartedactivity"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.app.pindout.OneTimeShow">
+    <ImageView
+        android:id="@+id/plogoo"
+        android:layout_alignParentTop="true"
+        android:layout_width="fill_parent"
+        android:layout_height="80dp"
+        android:layout_below="@+id/tool_bar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:contentDescription="@null"
+        android:src="@drawable/ic_launcher" />
+
+    <TextView android:text="" android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/getyoustarted"
+        android:layout_margin="10dp"
+        android:layout_below="@id/plogoo"
+        android:textAppearance="?android:textAppearanceLarge"/>
+    <TextView
+        android:id="@+id/areyoua"
+        android:layout_marginTop="15dp"
+        android:layout_margin="30dp"
+        android:layout_below="@id/getyoustarted"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:text=""
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+<Button
+    android:layout_margin="15dp"
+    android:layout_below="@id/areyoua"
+    android:id="@+id/butinduser"
+    android:text="Individual User"
+    android:onClick="induser"
+    android:background="@drawable/btn_purple"
+    android:layout_width="match_parent"
+    android:layout_height="60dp" />
+    <Button
+        android:onClick="bususer"
+        android:layout_margin="15dp"
+        android:layout_below="@id/butinduser"
+        android:id="@+id/butbususer"
+        android:background="@drawable/btn_purple"
+        android:text="Business User"
+        android:layout_width="match_parent"
+        android:layout_height="60dp" />
+</RelativeLayout>

@@ -1,0 +1,35 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/material_grey_100"
+    android:orientation="vertical" >
+
+    <ListView
+        android:id="@+id/business_dealslist"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:clipToPadding="false"
+        android:divider="#ddd"
+        android:dividerHeight="1px"
+        android:paddingBottom="94dp"
+        android:scrollbars="none" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/adddeal_fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_gravity="end|bottom"
+        android:layout_margin="16dp"
+        android:src="@drawable/ic_action_new"
+        app:backgroundTint="?attr/colorPrimary"
+        app:fabSize="normal"
+        app:rippleColor="@color/white" />
+
+</RelativeLayout><!-- From: file:/C:/Users/REMO/AndroidStudioProjects/Pindout/res/layout/deals_fragment.xml -->

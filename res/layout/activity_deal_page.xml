@@ -1,0 +1,69 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+android:orientation="vertical"
+    tools:context="com.app.pindout.DealPage">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/dpagetool"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/ColorPrimary11"
+        android:minHeight="?attr/actionBarSize"
+        android:title="Search"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark"
+        />
+
+    <ImageView
+        android:id="@+id/dealpageimg"
+        android:layout_width="match_parent"
+        android:layout_height="170dp" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_margin="10dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <TextView
+            android:layout_marginTop="5dp"
+            android:textAppearance="?android:textAppearanceLarge"
+            android:textColor="@color/ColorPrimary11"
+            android:id="@+id/dealpagedealname"
+            android:text="Deal Name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:textColor="@color/red"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:id="@+id/dealpagebusname"
+            android:text="Business Name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_marginTop="10dp"
+            android:textColor="@color/dark_neongreen"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:id="@+id/dealpagemrpname"
+            android:text="MRP Name"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:textColor="@color/dark_neongreen"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:id="@+id/dealpageoffername"
+            android:text="Offer Price Name"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:id="@+id/dealpagedescname"
+            android:text="Deal Description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

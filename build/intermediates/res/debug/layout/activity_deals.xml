@@ -1,0 +1,22 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context=".Deals">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/dealstool"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:title="Deals"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark"
+        />
+    <TextView android:text="Deals To Be Displayed" android:layout_width="wrap_content"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:gravity="center"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>
+<!-- From: file:/C:/Users/REMO/AndroidStudioProjects/Pindout/res/layout/activity_deals.xml -->

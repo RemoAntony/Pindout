@@ -1,0 +1,370 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.app.pindout"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="11"
+        android:targetSdkVersion="23" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission
+        android:name="android.permission.READ_EXTERNAL_STORAGE"
+        android:maxSdkVersion="18" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/PindoutTheme" >
+        <activity
+            android:name="com.app.pindout.SplashActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.app.pindout.Check_LoginActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/label_login"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <activity
+            android:name="com.app.pindout.RegisterActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/label_registration"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <activity
+            android:name="com.app.pindout.RegisterFacilityActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/label_registration"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <activity
+            android:name="com.app.pindout.RegisterActivity_Category"
+            android:label="@string/label_edit_business_cat"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <activity
+            android:name="com.app.pindout.ForgotPasswordActivity"
+            android:label="Forgot Password?"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <activity
+            android:name="com.app.pindout.RegisterActivity_Facility"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <activity
+            android:name="com.app.pindout.progressbar.ShowProgressDialog"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.app.pindout.ViewCategoryList"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <activity
+            android:name="com.app.pindout.ViewFacilityList"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <activity
+            android:name="com.app.pindout.MainActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <activity
+            android:name="com.app.pindout.businessdeals.AddDealActivity"
+            android:label="@string/label_add_deal"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <activity
+            android:name="com.app.pindout.greetingmsg.GreetingMessageActivity"
+            android:label="@string/label_messages"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <activity
+            android:name="com.app.pindout.greetingmsg.AddNewMessageActivity"
+            android:label="@string/add_new_msg"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <activity
+            android:name="com.app.pindout.businessdeals.DisplayDealsActivity"
+            android:label="@string/label_manage_deal"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <activity
+            android:name="com.app.pindout.businessdeals.EditDealActivity"
+            android:label="@string/label_edit_deal"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <activity
+            android:name="com.app.pindout.EditBusinessActivity"
+            android:label="@string/label_edit_business"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <activity
+            android:name="com.app.pindout.EditBusinessCategoryActivity"
+            android:label="@string/label_edit_business_cat"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <activity
+            android:name="com.app.pindout.Additional_Info_Activity"
+            android:label="@string/label_add_info"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <activity
+            android:name="com.app.pindout.businessdeals.DealActivity"
+            android:label="@string/label_deal_activity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <activity
+            android:name="com.app.pindout.AddBusinessImageTagActivity"
+            android:label="@string/label_add_tag_images"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <activity
+            android:name="com.app.pindout.Terms"
+            android:label="Terms and Conditions"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <activity
+            android:name="com.app.pindout.OneTimeShow"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/title_activity_one_time_show"
+            android:parentActivityName="com.app.pindout.SplashActivity"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.app.pindout.SplashActivity" />
+        </activity>
+        <activity
+            android:name="com.app.pindout.MainActivityRemo"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.app.pindout.RemIndUserMain"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="Pindout"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.app.pindout.DashBoard"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="DashBoard"
+            android:parentActivityName="com.app.pindout.RemIndUserMain"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.app.pindout.RemIndUserMain" />
+        </activity>
+        <activity
+            android:name="com.app.pindout.categoryAll"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/title_activity_category_all"
+            android:parentActivityName="com.app.pindout.RemIndUserMain"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.app.pindout.RemIndUserMain" />
+        </activity>
+        <activity
+            android:name="com.app.pindout.categoryOnline"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/title_activity_category_online"
+            android:parentActivityName="com.app.pindout.RemIndUserMain"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.app.pindout.RemIndUserMain" />
+        </activity>
+        <activity
+            android:name="com.app.pindout.categoryRestaurant"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/title_activity_category_restaurant"
+            android:parentActivityName="com.app.pindout.RemIndUserMain"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.app.pindout.RemIndUserMain" />
+        </activity>
+        <activity
+            android:name="com.app.pindout.categoryGrocery"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/title_activity_category_grocery"
+            android:parentActivityName="com.app.pindout.RemIndUserMain"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.app.pindout.RemIndUserMain" />
+        </activity>
+        <activity
+            android:name="com.app.pindout.categoryBeauty"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/title_activity_category_beauty"
+            android:parentActivityName="com.app.pindout.RemIndUserMain"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.app.pindout.RemIndUserMain" />
+        </activity>
+        <activity
+            android:name="com.app.pindout.Search"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/title_activity_search"
+            android:parentActivityName="com.app.pindout.RemIndUserMain"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.app.pindout.RemIndUserMain" />
+        </activity>
+        <activity
+            android:name="com.app.pindout.Wallet"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/title_activity_wallet"
+            android:parentActivityName="com.app.pindout.RemIndUserMain"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.app.pindout.RemIndUserMain" />
+        </activity>
+        <activity
+            android:name="com.app.pindout.Deals"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/title_activity_deals"
+            android:parentActivityName="com.app.pindout.RemIndUserMain"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.app.pindout.RemIndUserMain" />
+        </activity>
+        <activity
+            android:name="com.app.pindout.SignUp"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/title_activity_sign_up"
+            android:parentActivityName="com.app.pindout.MainActivityRemo"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivityRemo" />
+        </activity>
+        <activity
+            android:name="com.app.pindout.DisplayDealUrl"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="Deal Page"
+            android:parentActivityName="com.app.pindout.Search"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.app.pindout.Search" />
+        </activity>
+        <activity
+            android:name="com.app.pindout.MoreDealsSub1"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/title_activity_more_deals_sub1"
+            android:parentActivityName="com.app.pindout.RemIndUserMain"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.app.pindout.RemIndUserMain" />
+        </activity>
+        <activity
+            android:name="com.app.pindout.categorylisting"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/title_activity_categorylisting"
+            android:parentActivityName="com.app.pindout.RemIndUserMain"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.app.pindout.RemIndUserMain" />
+        </activity>
+        <activity
+            android:name="com.app.pindout.TaggedBusinesses"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/title_activity_tagged_businesses"
+            android:parentActivityName="com.app.pindout.RemIndUserMain"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.app.pindout.RemIndUserMain" />
+        </activity>
+        <activity
+            android:name="com.app.pindout.MoreDealsSub2"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/title_activity_more_deals_sub2"
+            android:parentActivityName="com.app.pindout.MoreDealsSub1"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.app.pindout.MoreDealsSub1" />
+        </activity>
+        <activity
+            android:name="com.app.pindout.MoreDealsSub3"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="Deals For You"
+            android:parentActivityName="com.app.pindout.MoreDealsSub2"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.app.pindout.RemIndUserMain" />
+        </activity>
+        <activity
+            android:name="com.app.pindout.BusinessPage"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="Deals For You"
+            android:parentActivityName="com.app.pindout.TaggedBusinesses"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.app.pindout.TaggedBusinesses" />
+        </activity>
+        <activity
+            android:name="com.app.pindout.categoryInstore"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/title_activity_category_instore"
+            android:parentActivityName="com.app.pindout.RemIndUserMain"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.app.pindout.RemIndUserMain" />
+        </activity>
+        <activity
+            android:name="com.app.pindout.DealPage"
+            android:label="@string/title_activity_deal_page"
+            android:parentActivityName="com.app.pindout.RemIndUserMain" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.app.pindout.RemIndUserMain" />
+        </activity>
+    </application>
+
+</manifest>

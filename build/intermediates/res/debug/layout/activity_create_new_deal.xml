@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bg7" >
+
+    <include
+        android:id="@+id/tool_bar"
+        layout="@layout/toolbar" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/tool_bar"
+        android:layout_marginBottom="58dp"
+        android:scrollbars="none" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/input_layout_dealtitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp" >
+
+                <EditText
+                    android:id="@+id/input_deal_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/hint_deal_title"
+                    android:inputType="text"
+                    android:singleLine="true"
+                    android:textColor="@color/white" />
+            </android.support.design.widget.TextInputLayout>
+
+            <RelativeLayout
+                android:id="@+id/lay_deal_image"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/input_layout_dealtitle" >
+
+                <Button
+                    android:id="@+id/selectdealimage"
+                    style="?android:attr/editTextStyle"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginRight="4dp"
+                    android:background="@color/transparent"
+                    android:gravity="start"
+                    android:paddingEnd="4dp"
+                    android:paddingLeft="0dp"
+                    android:paddingRight="4dp"
+                    android:paddingStart="0dp"
+                    android:paddingTop="22dp"
+                    android:text="@string/hint_select_image"
+                    android:textColor="@android:color/white"
+                    android:textSize="18sp" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@+id/selectdealimage"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginRight="4dp"
+                    android:background="@color/white"
+                    android:clickable="false" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/lay_deal_cat"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/lay_deal_image" >
+
+                <Button
+                    android:id="@+id/selectdealcategory"
+                    style="?android:attr/editTextStyle"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginRight="4dp"
+                    android:background="@color/transparent"
+                    android:gravity="start"
+                    android:paddingEnd="4dp"
+                    android:paddingLeft="0dp"
+                    android:paddingRight="4dp"
+                    android:paddingStart="0dp"
+                    android:paddingTop="22dp"
+                    android:text="@string/hint_select_deal_category"
+                    android:textColor="@android:color/white"
+                    android:textSize="18sp" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@+id/selectdealcategory"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginRight="4dp"
+                    android:background="@color/white"
+                    android:clickable="false" />
+            </RelativeLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/input_layout_dealdesc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/lay_deal_cat"
+                android:layout_marginTop="8dp" >
+
+                <EditText
+                    android:id="@+id/input_deal_desc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/hint_deal_desc"
+                    android:inputType="text"
+                    android:maxLength="250"
+                    android:singleLine="true"
+                    android:textColor="@color/white" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/input_layout_dealurl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/input_layout_dealdesc" >
+
+                <EditText
+                    android:id="@+id/input_deal_url"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/hint_deal_url"
+                    android:inputType="textUri"
+                    android:singleLine="true"
+                    android:textColor="@color/white" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/input_layout_dealmainprice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/input_layout_dealurl" >
+
+                <EditText
+                    android:id="@+id/input_deal_mainprice"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/hint_deal_main_price"
+                    android:inputType="number"
+                    android:singleLine="true"
+                    android:textColor="@color/white" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/input_layout_dealprice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/input_layout_dealmainprice" >
+
+                <EditText
+                    android:id="@+id/input_deal_price"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/hint_deal_deal_price"
+                    android:inputType="number"
+                    android:singleLine="true"
+                    android:textColor="@color/white" />
+            </android.support.design.widget.TextInputLayout>
+
+            <RelativeLayout
+                android:id="@+id/lay_end_date"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/input_layout_dealprice" >
+
+                <Button
+                    android:id="@+id/selectenddate"
+                    style="?android:attr/editTextStyle"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginRight="4dp"
+                    android:background="@color/transparent"
+                    android:focusable="true"
+                    android:gravity="start"
+                    android:paddingEnd="4dp"
+                    android:paddingLeft="0dp"
+                    android:paddingRight="4dp"
+                    android:paddingStart="0dp"
+                    android:paddingTop="22dp"
+                    android:text="@string/hint_deal_end_date"
+                    android:textColor="@android:color/white"
+                    android:textSize="18sp" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@+id/selectenddate"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginRight="4dp"
+                    android:background="@color/white"
+                    android:clickable="false" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" >
+
+        <Button
+            android:id="@+id/btn_submit"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="180dp"
+            android:layout_marginStart="180dp"
+            android:background="#0066FF"
+            android:text="@string/submit"
+            android:textColor="@android:color/white"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/btn_cancel"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="0dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginStart="180dp"
+            android:background="@android:color/darker_gray"
+            android:text="@string/cancel"
+            android:textColor="@android:color/white"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+</RelativeLayout><!-- From: file:/C:/Users/REMO/AndroidStudioProjects/Pindout/res/layout/activity_create_new_deal.xml -->

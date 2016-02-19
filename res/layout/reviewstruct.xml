@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_margin="20dp"
+android:background="@color/white"
+    android:orientation="vertical"
+    android:id="@+id/reviewstruct"
+    android:layout_width="match_parent" android:layout_height="wrap_content">
+    <View
+        android:layout_marginTop="10dp"
+        android:layout_alignParentTop="true"
+        android:background="#c3c3e5"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:id="@+id/v2"
+        />
+    <TextView
+        android:textColor="@color/colorPrimaryDark"
+        android:id="@+id/business_name11"
+        android:text="Business name"
+        android:layout_below="@id/v2"
+        android:layout_margin="5dp"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/place"
+        android:text="place"
+        android:layout_below="@id/v2"
+        android:layout_toRightOf="@id/business_name11"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:textColor="@color/dark_neongreen"
+        android:layout_margin="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <View
+        android:layout_below="@+id/business_name11"
+        android:background="#c3c3e5"
+        android:id="@+id/v1"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"/>
+
+    <ImageView
+        android:id="@+id/Logoo"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="2dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="22dp"
+        android:contentDescription="@null"
+        />
+
+
+
+    <TextView
+        android:id="@+id/review"
+        android:text="review"
+        android:layout_margin="5dp"
+        android:layout_below="@id/v1"
+        android:layout_width="wrap_content"
+        android:textColor="@color/VioletRed"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/reply"
+        android:text="Reply"
+        android:layout_margin="5dp"
+        android:layout_below="@id/review"
+        android:textColor="@color/bg_blue"
+        android:layout_width="wrap_content"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:layout_height="wrap_content" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/review"
+        android:layout_margin="5dp"
+        android:text="Reply"
+        android:id="@+id/repbutton"
+        android:layout_toEndOf="@id/reply"
+        android:layout_toRightOf="@id/reply" />
+
+    <TextView
+        android:id="@+id/reply1"
+        android:layout_margin="5dp"
+        android:layout_toRightOf="@id/review"
+        android:layout_below="@+id/business_name11"
+        android:visibility="gone"
+        android:text="Gone"
+        android:layout_width="0dp"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:layout_height="0dp" />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/dynText"
+        android:layout_below="@+id/repbutton">
+
+    </LinearLayout>
+
+</RelativeLayout>

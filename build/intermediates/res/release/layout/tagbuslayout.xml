@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_margin="5dp"
+    android:background="#cccccc"
+    android:layout_height="match_parent"
+     >
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/tagbuslayout"
+    android:layout_margin="5dp"
+    android:layout_height="wrap_content">
+
+
+    <TextView
+        android:id="@+id/notagbus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"/>
+
+</LinearLayout>
+</ScrollView><!-- From: file:/C:/Users/REMO/AndroidStudioProjects/Pindout/res/layout/tagbuslayout.xml -->

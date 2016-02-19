@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/material_grey_300" >
+
+    <include
+        android:id="@+id/tool_bar"
+        layout="@layout/toolbar" />
+
+    <RelativeLayout
+        android:id="@+id/top_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="70dp"
+        android:layout_below="@+id/tool_bar"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="6dp"
+        android:layout_marginRight="6dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/rounde_layout_bg" >
+
+        <TextView
+            android:id="@+id/add_info_top"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="6dp"
+            android:layout_marginStart="6dp"
+            android:contentDescription="@null"
+            android:text="@string/add_info"
+            android:textColor="@color/black"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/user_info_top"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/add_info_top"
+            android:layout_marginLeft="6dp"
+            android:layout_marginStart="6dp"
+            android:text="@string/user_info_top"
+            android:textColor="@color/material_grey_600"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:id="@+id/addinfotop_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="8dp"
+            android:layout_marginLeft="6dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginStart="6dp"
+            android:contentDescription="@null"
+            android:onClick="OpenInfoFirst"
+            android:src="@drawable/ic_open_circle" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/middle_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="70dp"
+        android:layout_below="@+id/top_layout"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="6dp"
+        android:layout_marginRight="6dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/rounde_layout_bg" >
+
+        <TextView
+            android:id="@+id/add_info_middle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="6dp"
+            android:layout_marginStart="6dp"
+            android:contentDescription="@null"
+            android:text="@string/add_info"
+            android:textColor="@color/black"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/user_info_middle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/add_info_middle"
+            android:layout_marginLeft="6dp"
+            android:layout_marginStart="6dp"
+            android:text="@string/user_info_middle"
+            android:textColor="@color/material_grey_600"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:id="@+id/addinfomiddle_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="8dp"
+            android:layout_marginLeft="6dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginStart="6dp"
+            android:contentDescription="@null"
+            android:onClick="OpenInfoSecond"
+            android:src="@drawable/ic_open_circle" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/bottom_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="70dp"
+        android:layout_below="@+id/middle_layout"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="6dp"
+        android:layout_marginRight="6dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/rounde_layout_bg" >
+
+        <TextView
+            android:id="@+id/add_info_bottom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="6dp"
+            android:layout_marginStart="6dp"
+            android:contentDescription="@null"
+            android:text="@string/add_info"
+            android:textColor="@color/black"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/user_info_bottom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/add_info_bottom"
+            android:layout_marginLeft="6dp"
+            android:layout_marginStart="6dp"
+            android:text="@string/user_info_bottom"
+            android:textColor="@color/material_grey_600"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:id="@+id/addinfobottom_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="8dp"
+            android:layout_marginLeft="6dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginStart="6dp"
+            android:contentDescription="@null"
+            android:onClick="OpenInfoThird"
+            android:src="@drawable/ic_open_circle" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/bottom_most_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="70dp"
+        android:layout_below="@+id/bottom_layout"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="6dp"
+        android:layout_marginRight="6dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/rounde_layout_bg" >
+
+        <TextView
+            android:id="@+id/add_info_bottom_most"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="6dp"
+            android:layout_marginStart="6dp"
+            android:contentDescription="@null"
+            android:text="@string/add_info"
+            android:textColor="@color/black"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/user_info_bottom_most"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/add_info_bottom_most"
+            android:layout_marginLeft="6dp"
+            android:layout_marginStart="6dp"
+            android:text="@string/user_info_bottom_most"
+            android:textColor="@color/material_grey_600"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:id="@+id/addinfobottom_img_most"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="8dp"
+            android:layout_marginLeft="6dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginStart="6dp"
+            android:contentDescription="@null"
+            android:onClick="OpenInfoFourth"
+            android:src="@drawable/ic_open_circle" />
+    </RelativeLayout>
+
+</RelativeLayout>

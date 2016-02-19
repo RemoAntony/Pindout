@@ -1,0 +1,180 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+android:background="#c9c9c9"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context=".Search">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/searchtool"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/ColorPrimary11"
+        android:minHeight="?attr/actionBarSize"
+        android:title="Search"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark"
+        >
+    <Spinner
+        android:id="@+id/spinner_city"
+        android:layout_width="0dp"
+        android:background="@color/light_blue"
+        android:popupBackground="@color/colorPrimary"
+        android:layout_height="wrap_content" />
+        <LinearLayout
+            android:background="@color/colorPrimaryDark"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <Spinner
+                    android:popupBackground="#ffffff"
+                    android:id="@+id/localitysearch"
+                    android:textColor="#ffffff"
+                    android:layout_weight="3"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp" />
+                <EditText
+                    android:id="@+id/keywordsearch"
+                    android:textColor="#000000"
+                    android:hint="Keyword"
+                    android:background="#ffffff"
+                    android:textColorHint="#26ae90"
+                    android:textCursorDrawable="@null"
+                    android:layout_width="0dp"
+                    android:layout_weight="3"
+                    android:layout_height="50dp" />
+
+                <Spinner
+                    android:textColor="#ffffff"
+                    android:layout_weight="3"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:popupBackground="#ffffff"
+                    android:id="@+id/spinnerbord" />
+                <Button
+                    android:layout_weight="1"
+                    android:text="Go"
+                    android:background="@drawable/btn_purple"
+                    android:onClick="searchall"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </android.support.v7.widget.Toolbar>
+
+    <TextView
+        android:id="@+id/searchresultstext"
+        android:background="@color/colorPrimaryDark"
+        android:text="Search Results"
+        android:gravity="center"
+        android:textColor="#ffffff"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <LinearLayout
+        android:id="@+id/fetchpagination"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+        <Button
+            android:onClick="m3rewind"
+            android:background="@drawable/rewind"
+            android:layout_width="50dp"
+            android:id="@+id/b1"
+            android:layout_height="wrap_content" />
+        <Button
+            android:layout_marginRight="10dp"
+            android:onClick="m3pre"
+            android:id="@+id/b2"
+            android:background="@drawable/backgreen"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:onClick="tv11n"
+            android:text=""
+            android:layout_margin="10dp"
+            android:textAppearance="?android:textAppearanceLarge"
+            android:id="@+id/mdpgination1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:onClick="tv22n"
+            android:layout_margin="10dp"
+            android:textAppearance="?android:textAppearanceLarge"
+            android:text=""
+            android:id="@+id/mdpgination2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:onClick="tv33n"
+            android:layout_margin="10dp"
+            android:textAppearance="?android:textAppearanceLarge"
+            android:text=""
+            android:id="@+id/mdpgination3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <Button
+            android:layout_marginLeft="10dp"
+            android:onClick="m3more"
+            android:id="@+id/b3"
+            android:background="@drawable/playgreen"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content" />
+        <Button
+            android:onClick="m3ff"
+            android:id="@+id/b4"
+            android:background="@drawable/fastforward"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <ScrollView
+        android:id="@+id/insScroll"
+        android:background="@color/light_coral"
+        android:layout_margin="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/scrollrelcheck1">
+        <LinearLayout
+            android:layout_alignParentTop="true"
+        android:id="@+id/searchresults"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+    </LinearLayout>
+        <Button
+            android:layout_alignParentRight="true"
+            android:background="@drawable/btn_red"
+            android:textColor="#ffffff"
+            android:onClick="predealssearch"
+            android:layout_alignParentTop="true"
+            android:id="@+id/searchprev"
+            android:text="Previous Results"
+            android:layout_width="0dp"
+            android:layout_height="0dp" />
+        <Button
+            android:textColor="#ffffff"
+            android:background="@drawable/btn_green"
+            android:onClick="nextdealssearch"
+            android:layout_alignParentBottom="true"
+            android:id="@+id/searchnext"
+            android:text="Load More"
+            android:layout_alignParentRight="true"
+            android:layout_width="0dp"
+            android:layout_height="0dp" />
+    </RelativeLayout>
+    </ScrollView>
+</LinearLayout>

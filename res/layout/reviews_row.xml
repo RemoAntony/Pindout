@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/material_grey_100" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@drawable/rounde_layout_bg" >
+
+        <TextView
+            android:id="@+id/review_username"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="6dp"
+            android:text=""
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/review_msg"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/review_username"
+            android:layout_marginLeft="8dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="4dp"
+            android:text=""
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:textStyle="normal" />
+
+        <TextView
+            android:id="@+id/reviewmsgdatentime"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/review_msg"
+            android:layout_marginLeft="8dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="4dp"
+            android:text=""
+            android:textColor="@color/material_grey_600"
+            android:textSize="14sp"
+            android:textStyle="normal" />
+
+        <View
+            android:id="@+id/divider_line"
+            android:layout_width="fill_parent"
+            android:layout_height="2dp"
+            android:layout_below="@+id/reviewmsgdatentime"
+            android:layout_marginEnd="6dp"
+            android:layout_marginLeft="6dp"
+            android:layout_marginRight="6dp"
+            android:layout_marginStart="6dp"
+            android:layout_marginTop="8dp"
+            android:background="@color/VioletRed" />
+
+        <TextView
+            android:id="@+id/review_comment"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/divider_line"
+            android:layout_marginLeft="8dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="8dp"
+            android:paddingBottom="10dp"
+            android:text="@string/users_no_comments"
+            android:textColor="@color/material_grey_600"
+            android:textSize="14sp"
+            android:textStyle="normal" />
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_margin="5dp"
+    android:background="#cccccc"
+    android:id="@+id/insScroll"
+    android:layout_height="match_parent"
+    >
+    <RelativeLayout
+        android:id="@+id/scrollrelcheck1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:id="@+id/msgtablayout"
+        android:layout_margin="5dp"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:id="@+id/notagdeal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"/>
+
+    </LinearLayout>
+    <Button
+
+        android:background="@drawable/btn_red"
+        android:textColor="#ffffff"
+
+        android:layout_below="@+id/msgtablayout"
+        android:id="@+id/prev"
+        android:text="Previous Results"
+        android:layout_width="0dp"
+        android:layout_height="0dp" />
+    <Button
+        android:textColor="#ffffff"
+        android:background="@drawable/btn_green"
+
+        android:layout_below="@+id/msgtablayout"
+        android:id="@+id/next"
+        android:text="Load More"
+        android:layout_alignParentRight="true"
+        android:layout_width="0dp"
+        android:layout_height="0dp" />
+    </RelativeLayout>
+</ScrollView><!-- From: file:/C:/Users/REMO/AndroidStudioProjects/Pindout/res/layout/msgtablayout.xml -->
