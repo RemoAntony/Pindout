@@ -115,16 +115,15 @@
                 android:ellipsize="end"/>
 
             <Button
+                android:background="@drawable/crossicon"
                 android:layout_marginLeft="10dp"
-                android:background="@drawable/btn_violetred"
                 android:layout_below="@id/main_price"
                 android:layout_toRightOf="@id/deal_expiry"
                 android:id="@+id/interestedbutton"
-                android:text="Not Interested"
                 android:padding="2dp"
                 android:textColor="#ffffff"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
+                android:layout_width="30dp"
+                android:layout_height="30dp" />
         </RelativeLayout>
         <TextView
             android:id="@+id/deal_name"
