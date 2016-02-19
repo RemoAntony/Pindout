@@ -155,7 +155,7 @@ String iddd="";
                         RelativeLayout rl = (RelativeLayout) v.findViewById(R.id.top_lay);
                         //  Log.e("Date result",""+d1.compareTo(end));
                         Button interest=(Button)v.findViewById(R.id.interestedbutton);
-                        interest.setVisibility(View.GONE);
+                        //interest.setVisibility(View.GONE);
                         interest.setOnClickListener(new View.OnClickListener() {
                             @Override
                             public void onClick(View view) {
@@ -187,7 +187,7 @@ String iddd="";
                         });
 
                         String admin=c.getString("admin");
-                        String status = c.getString("status");
+                        String status = c.getString("status1");
                         if (admin.equals("1")&&status.equals("1")) {
                             rl.setBackgroundColor(Color.GREEN);
                             // Log.e("Date result", " hhg");

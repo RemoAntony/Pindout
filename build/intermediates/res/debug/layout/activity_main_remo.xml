@@ -69,15 +69,7 @@
             android:layout_height="0dp"
             android:layout_width="0dp"
             />
-        <TextView
-            android:id="@+id/fgpassword"
-            android:layout_marginTop="30dp"
-            android:layout_gravity="center_horizontal"
-            android:onClick="fgpass"
-            android:text="Forgot Password?"
-            android:layout_height="wrap_content"
-            android:layout_width="wrap_content"
-            />
+
         <RadioGroup
             android:id="@+id/choiceofuser"
             android:layout_width="wrap_content"
@@ -94,6 +86,15 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" />
         </RadioGroup>
+        <TextView
+            android:id="@+id/fgpassword"
+            android:layout_marginTop="30dp"
+            android:layout_gravity="center_horizontal"
+            android:onClick="fgpass"
+            android:text="Forgot Password?"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            />
     </LinearLayout>
 
 </RelativeLayout><!-- From: file:/C:/Users/REMO/AndroidStudioProjects/Pindout/res/layout/activity_main_remo.xml -->

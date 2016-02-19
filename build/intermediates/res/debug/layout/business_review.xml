@@ -35,7 +35,6 @@
         android:layout_width="wrap_content"
         android:layout_below="@+id/ar"
         android:layout_marginStart="20dp"
-        android:layout_toRightOf="@+id/user"
         android:layout_height="wrap_content"
         android:textColor="#323173"
         android:textAppearance="?android:attr/textAppearanceLarge"/>

@@ -1063,7 +1063,7 @@ return db.query(DATABASE_TABLE, new String[] {KEY_DEALNAME,KEY_DEALDESC, KEY_MAI
                                     TextView tbus = (TextView) midlayout.findViewById(R.id.deal_expiry);
                                     dbusname = tbus.getText().toString();
 
-                                    Toast.makeText(RemIndUserMain.this, "You can Access Your interested deals from your wallet"+curdealid, Toast.LENGTH_LONG).show();
+                                    Toast.makeText(RemIndUserMain.this, "You can Access Your interested deals from your wallet", Toast.LENGTH_LONG).show();
                                     view.setVisibility(View.GONE);
                                     new InsertInterested().execute();
                                 }
